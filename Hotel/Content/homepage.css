@@ -1,0 +1,14 @@
+﻿.header {
+    background-image: url('images/beach.jpeg');
+    background-size: cover;
+    padding-bottom: 200px;
+}
+
+#who {
+    font-family: 'Anton', sans-serif;
+    color: ghostwhite;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 160px;
+}
+
