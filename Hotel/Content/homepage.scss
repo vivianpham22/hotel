@@ -1,1 +1,63 @@
-﻿
+﻿$primary-color: orange;
+$alignment: center;
+$primary-font: 'Archivo Black', sans-serif;
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+body {
+    margin: 0px;
+    padding-top: 0px;
+
+}
+
+
+.navbar {
+    background-color: transparent;
+    background: transparent;
+    border-color: transparent;
+    padding-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+
+.header {
+    background-image: url('images/beach.jpeg');
+    background-size: cover;
+    padding-bottom: 250px;
+
+
+    #who {
+        color: $primary-color;
+        font-family: $primary-font;
+        text-align: $alignment;
+        padding-top: 170px;
+        margin-top: 0px;
+        font-size: 40px;
+    }
+
+    .de {
+        @include border-radius(3px);
+        width: 200px;
+        height: 30px;
+    }
+
+    .re {
+        @include border-radius(3px);
+        @extend .de;
+    }
+}
+
+
+.places {
+
+    h1 {
+        font-family: $primary-font;
+        text-align: $alignment;
+        color: $primary-color;
+    }
+}

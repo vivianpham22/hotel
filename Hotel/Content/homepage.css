@@ -1,14 +1,38 @@
-﻿.header {
-    background-image: url('images/beach.jpeg');
-    background-size: cover;
-    padding-bottom: 200px;
-}
+﻿body {
+  margin: 0px;
+  padding-top: 0px; }
 
-#who {
-    font-family: 'Anton', sans-serif;
-    color: ghostwhite;
-    font-size: 60px;
+.navbar {
+  background-color: transparent;
+  background: transparent;
+  border-color: transparent;
+  padding-top: 0px;
+  margin-bottom: 0px; }
+
+.header {
+  background-image: url("images/beach.jpeg");
+  background-size: cover;
+  padding-bottom: 250px; }
+  .header #who {
+    color: orange;
+    font-family: "Archivo Black", sans-serif;
     text-align: center;
-    padding-top: 160px;
-}
+    padding-top: 170px;
+    margin-top: 0px;
+    font-size: 40px; }
+  .header .de, .header .re {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    width: 200px;
+    height: 30px; }
+  .header .re {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px; }
+
+.places h1 {
+  font-family: "Archivo Black", sans-serif;
+  text-align: center;
+  color: orange; }
 

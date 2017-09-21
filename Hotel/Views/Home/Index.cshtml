@@ -4,10 +4,11 @@
 }
 
 <!--Font-->
-<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
 
 <!--Stylesheet-->
 <link href="~/Content/homepage.css" rel="stylesheet" />
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
 
 <!--Scripts-->
 <script src="~/Scripts/homepage.js"></script>
@@ -19,14 +20,39 @@
 
 
 <body>
-   
+    <nav class="navbar navbar-default navbar-fixed-top" style="font-family: 'Questrial', sans-serif; font:16px; text-shadow: 0, 1px, 2px, rgba(0,0,0,0.20);">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-2">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://localhost:57950/Home/Index" style="color:orange;">WING IT</a>
+            </div>
+        </div>
+    </nav><!-- /.navbar -->
+
     <section class="header">
-        <h1 id="who">Who Are You Traveling With?</h1>
+        <h1 id="who">Checking In?</h1>
         <center>
-            <i class="fa fa-calendar fa-2x" aria-hidden="true"></i> <input type='text' id='departing' placeholder='Departing' />
-            <i class="fa fa-calendar fa-2x" aria-hidden="true" ></i> <input type='text' id='returning' placeholder='Returning' />
+            <i class="fa fa-calendar fa-2x" aria-hidden="true"></i> <input type='text' id='departing' placeholder='Departing' class="de" />
+            <i class="fa fa-calendar fa-2x" aria-hidden="true"></i> <input type='text' id='returning' placeholder='Returning' class="re" />
         </center>
     </section>
-    <script src="~/Scripts/homepage.js"></script>
 
+
+    @*<section class="places">
+            <div class="container">
+                <h1>Places You Should Travel</h1><
+                <div class="row">
+
+                </div>
+            </div>
+        </section>*@
+
+
+
+    <script src="~/Scripts/homepage.js"></script>
 </body>
